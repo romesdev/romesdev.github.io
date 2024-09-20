@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <title>romesdev</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/550/550753.png"
+    />
     <style>
       body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        font-family:"Lucida Console", "Courier New", monospace;
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: #000000;
       }
       header {
-        color: #000000;
+        color: #fff;
         padding: 1rem 2rem;
       }
       .navbar {
@@ -23,14 +29,22 @@
         text-decoration: none;
         padding: 0 1rem;
       }
+
+      h1 {
+        font-size: 36px;
+        text-align: left;
+      }
+
       .main-section {
         flex-grow: 1;
         display: flex;
         align-items: center;
-        justify-content: center;
-        text-align: center;
-        background-color: #fff;
-        padding: 2rem;
+        text-align: justify;
+        text-justify: inter-word;
+        background-color: #040404;
+        color: #fff;
+        padding: 2rem 2rem;
+        font-size: 28px;
       }
       footer {
         background: #333;
@@ -40,22 +54,30 @@
       }
 
       a.button {
-        border: 2px solid #00000099;
+        border: 2px solid #efd70599;
         border-radius: 8px;
-        color: #000000;
-        background-color: #f8f8f8;
+        color: #ffffff;
+        background-color: #000000;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 32px;
         padding: 0.35em 1.2em;
         display: inline-block;
-        font-weight:300;
+        font-weight: 300;
         transition-duration: 0.4s;
-
+      }
+      a:link {
+        text-decoration: none;
+        padding: 0.1em 0.2em;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+      a:link:hover {
+        background-color: white;
       }
 
       a.button:hover {
-        background-color: #000000; /* Green */
-        color: white;
+        background-color: #ffffff;
+        color: #000000;
       }
     </style>
   </head>
@@ -68,11 +90,11 @@
       <div>
         <h1>Olá, eu sou Romes Filho, um cientista da computação</h1>
         <p>
-          Trabalho como desenvolvedor back-end na Inbox </br>e sou estudante de
-          Mestrado em Computação na Universidade Federal do Ceará (UFC)
-          
+          Trabalho como desenvolvedor back-end na
+          <a href="https://inbox.ac/" link>Inbox</a> e sou estudante de Mestrado
+          em Computação na Universidade Federal do Ceará (UFC)
         </p>
-  
+
         <a href="https://github.com/romesdev" class="button">Meu GitHub</a>
         <a href="https://www.linkedin.com/in/romes-filho/" class="button"
           >Meu LinkedIn</a
