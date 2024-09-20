@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>romesdev</title>
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-        }
-        .navbar {
-            display: flex;
-            justify-content: center;
-        }
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 1rem;
-        }
-        .main-section {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background-color: #fff;
-            padding: 2rem;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family:"Lucida Console", "Courier New", monospace;
+      }
+      header {
+        color: #000000;
+        padding: 1rem 2rem;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+      }
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 1rem;
+      }
+      .main-section {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #fff;
+        padding: 2rem;
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      a.button {
+        border: 2px solid #00000099;
+        border-radius: 8px;
+        color: #000000;
+        background-color: #f8f8f8;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 0.35em 1.2em;
+        display: inline-block;
+        font-weight:300;
+        transition-duration: 0.4s;
+
+      }
+
+      a.button:hover {
+        background-color: #000000; /* Green */
+        color: white;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>romesdev</h1>
+    </header>
+
     <section id="#about" class="main-section">
-        <div>
-            <h1>Olá, eu sou Romes Filho, um cientista da computação</h1>
-            <p>Trabalho como desenvolvedor back-end na Inbox e sou estudante de Mestrado em Computação na Universidade Federal do Ceará (UFC) - Campus Quixadá</p>
-        </div>
+      <div>
+        <h1>Olá, eu sou Romes Filho, um cientista da computação</h1>
+        <p>
+          Trabalho como desenvolvedor back-end na Inbox </br>e sou estudante de
+          Mestrado em Computação na Universidade Federal do Ceará (UFC)
+          
+        </p>
+  
+        <a href="https://github.com/romesdev" class="button">Meu GitHub</a>
+        <a href="https://www.linkedin.com/in/romes-filho/" class="button"
+          >Meu LinkedIn</a
+        >
+        <a
+          href="https://drive.google.com/file/d/10IvRLrEsDAKuHG5SpNK4JHU2lTRcKWGB/view?usp=drive_link"
+          class="button"
+          download
+          >Meu CV</a
+        >
+      </div>
     </section>
-</body>
+  </body>
 </html>
